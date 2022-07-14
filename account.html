@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Аккаунт</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220714161928">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="clothes.html" class="menu__link">Clothes</a></li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="shoes.html" class="menu__link">Shoes</a></li>
+						</ul>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="accessories.html" class="menu__link">Accessories</a></li>
+						</ul>
+						<div class="header__burger-navigation"></div>
+					</nav>
+				</div>
+				<a href="#" class="header__logo logo">
+					<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип"></picture>
+				</a>
+				<div class="header__navigation navigation-header">
+
+					<form action="#" class="navigation-header__search-body">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search..." class="navigation-header__search">
+						<a href="#" class="navigation-header__search-button"></a>
+					</form>
+					<a href="account.html" class="navigation-header__user"></a>
+					<a data-da=".header__burger-navigation, 479.98" href="#" class="navigation-header__cart"></a>
+					<a data-da=".header__burger-navigation, 479.98" href="#" class="navigation-header__favorite"></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__user-account user-account">
+				<div class="user-account__container">
+					<div class="user-account__top">
+						<h1 class="user-account__title main-title">Hello there!</h1>
+						<div class="user-account__subtitle">Please sign in or create account to continue</div>
+					</div>
+					<div class="user-account__forms">
+						<form novalidate class="user-account__form main-form" action="#">
+							<div class="main-form__title title-form">SIGN IN</div>
+							<div class="main-form__body">
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="signmail">Email</label>
+									<input data-required="email" id="signmail" autocomplete="off" type="email" name="signmail" data-error="Email введен не корректно" class="main-form__input">
+								</div>
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="signpasswordsign">Password</label>
+									<input data-required id="signpasswordsign" autocomplete="off" type="password" name="signpasswordsign" data-error="Поле не заполненно" class="main-form__input">
+								</div>
+								<div class="checkbox">
+									<input id="signcheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" value="remember" name="signcheckbox">
+									<label for="signcheckbox" class="checkbox__label"><span class="checkbox__text">Remeber my
+											details</span></label>
+								</div>
+							</div>
+							<button type="submit" class="main-form__button main-button">SIGN IN</button>
+						</form>
+
+						<form novalidate class="user-account__form main-form" action="#">
+							<div class="main-form__title title-form">CREATE ACCOUNT</div>
+							<div class="main-form__body">
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="createfirstname">First name</label>
+									<input data-required id="createfirstname" autocomplete="off" type="text" name="createfirstname" data-error="Поле не заполненно" class="main-form__input">
+								</div>
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="createlastname">Last name</label>
+									<input data-required id="createlastname" autocomplete="off" type="text" name="createlastname" data-error="Поле не заполненно" class="main-form__input">
+								</div>
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="createmail">Email</label>
+									<input data-required="email" id="createmail" autocomplete="off" type="email" name="createmail" data-error="Email введен не корректно" class="main-form__input">
+								</div>
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="createpassword">Create Password</label>
+									<input data-required id="createpassword" autocomplete="off" type="password" name="createpassword" data-error="Поле не заполненно" class="main-form__input">
+								</div>
+								<div class="main-form__input-wrap">
+									<label class="main-form__label" for="confirmpassword">Confirm Password</label>
+									<input data-required id="confirmpassword" autocomplete="off" type="password" name="confirmpassword" data-error="Поле не заполненно" class="main-form__input">
+								</div>
+								<div class="checkbox">
+									<input id="createcheckbox" data-error="Поле не заполненно" class="checkbox__input" type="checkbox" value="1" name="createcheckbox">
+									<label for="createcheckbox" class="checkbox__label"><span class="checkbox__text">Remeber
+											my
+											details</span></label>
+								</div>
+							</div>
+							<button type="submit" class="main-form__button main-button">CREATE ACCOUNT</button>
+						</form>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body-logo">
+					<a href="#" class="footer__logo logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип"></picture>
+					</a>
+				</div>
+
+				<div class="footer__column footer__column_wide">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">About Us</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Contact</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Terms $ Condition</a>
+						</li>
+					</ul>
+					<div class="footer__socials socials">
+						<a href="#" class="socials__item socials__item_facebook">Facebook</a>
+						<a href="#" class="socials__item socials__item_twitter">Twitter</a>
+						<a href="#" class="socials__item socials__item_instagram">Instagram</a>
+					</div>
+
+					<form novalidate class="footer__subscribe subscribe" action="#">
+						<label for="mail" class="subscribe__label">Subscribe to our newsletter</label>
+						<div class="subscribe__input-body">
+							<input id="mail" data-required="email" autocomplete="off" type="email" name="email" data-error="Ошибка" placeholder="Email Adrass" class="subscribe__input">
+							<button type="submit" class="subscribe__button">OK</button>
+						</div>
+					</form>
+				</div>
+				<div class="footer__column footer__column_small">
+					<div class="footer__contacts contacts">
+						<a href="#" class="contacts__item">321 Pikes Place Parkway Seattle, WA 54321</a>
+						<a href="tel:35557654321" class="contacts__item">3(555) 765-4321</a>
+						<a href="mailto:Info@company.com" class="contacts__item">Info@company.com</a>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220714161928"></script>
+</body>
+
+</html>
